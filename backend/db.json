@@ -15,5 +15,14 @@
       "name": "Samsung S20+",
       "price": "6000"
     }
+  ],
+  "customers": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "age": 30,
+      "address": "Rua X",
+      "phone": "99999-9999"
+    }
   ]
 }
