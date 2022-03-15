@@ -14,6 +14,16 @@ export class CustomerReadDataSource extends DataSource<Customer> {
         super();
     }
 
+    defineCustomSettings(): void {
+        if (this.paginator) {
+            this.paginator._intl.itemsPerPageLabel = 'Itens por página: ';
+            this.paginator._intl.firstPageLabel = 'Primeira';
+            this.paginator._intl.lastPageLabel = 'Última';
+            this.paginator._intl.nextPageLabel = 'Próxima';
+            this.paginator._intl.previousPageLabel = 'Anterior';
+        }
+    }
+
     /**
      * Connect this data source to the table. The table will only update when
      * the returned stream emits new items.
