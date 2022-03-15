@@ -1,0 +1,28 @@
+<mat-card>
+    <mat-card-title>Excluir Cliente</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Código" [value]="customer?.id" name="id" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Nome" [value]="customer?.name" name="name" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Idade" [value]="customer?.age" name="age" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Endereço" [value]="customer?.address" name="address" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Telefone" [value]="customer?.phone" name="phone" disabled>
+        </mat-form-field>
+    </form>
+
+    <button mat-raised-button (click)="deleteCustomer()" color="warn">
+        Excluir
+    </button>
+
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+</mat-card>

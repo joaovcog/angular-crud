@@ -37,6 +37,9 @@ import { ProductUpdateComponent } from './components/product/product-update/prod
 import { ProductDeleteComponent } from './components/product/product-delete/product-delete.component';
 import { CustomerCrudComponent } from './views/customer-crud/customer-crud.component';
 import { CustomerReadComponent } from './components/customer/customer-read/customer-read.component';
+import { CustomerCreateComponent } from './components/customer/customer-create/customer-create.component';
+import { CustomerUpdateComponent } from './components/customer/customer-update/customer-update.component';
+import { CustomerDeleteComponent } from './components/customer/customer-delete/customer-delete.component';
 
 registerLocaleData(localePt);
 
@@ -56,7 +59,10 @@ registerLocaleData(localePt);
     ProductUpdateComponent,
     ProductDeleteComponent,
     CustomerCrudComponent,
-    CustomerReadComponent
+    CustomerReadComponent,
+    CustomerCreateComponent,
+    CustomerUpdateComponent,
+    CustomerDeleteComponent
   ],
   imports: [
     BrowserModule,

@@ -20,9 +20,16 @@
     {
       "id": 1,
       "name": "John Doe",
-      "age": 30,
+      "age": "29",
       "address": "Rua X",
       "phone": "99999-9999"
+    },
+    {
+      "name": "Maria",
+      "age": "26",
+      "address": "Rua P",
+      "phone": "598464645",
+      "id": 2
     }
   ]
 }
